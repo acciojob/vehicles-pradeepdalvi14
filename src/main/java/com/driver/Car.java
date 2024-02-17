@@ -68,9 +68,9 @@ public class Car extends Vehicle {
         return gears;
     }
 
-    public void setGears(int gears) {
-        this.gears = gears;
-    }
+    //public void setGears(int gears) {
+//        this.gears = gears;
+//    }
 
     public boolean isManual() {
         return isManual;
