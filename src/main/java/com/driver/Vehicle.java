@@ -15,22 +15,22 @@ public class Vehicle {
     public String getName(){
         return name;
     }
-    public void setName(String name){
-        this.name = name;
-    }
+//    public void setName(String name){
+//        this.name = name;
+//    }
     public int getCurrentSpeed() {
         return currentSpeed;
     }
-  public void setCurrentSpeed(int speed1){
-        currentSpeed = speed1;
-  }
+ // public void setCurrentSpeed(int speed1){
+//        currentSpeed = speed1;
+//  }
     public int getCurrentDirection() {
         return currentDirection;
     }
 
     public void steer(int direction){
         //direction is in degrees, add it to the current direction
-        currentDirection = direction; //
+        currentDirection = currentDirection+direction; //
         System.out.println("steer method called - The direction is changed to: " + currentDirection + " degrees");
     }
 
@@ -42,11 +42,11 @@ public class Vehicle {
     }
 
     public void stop(){
-
+        currentSpeed = 0;
         System.out.println("stop method called - The vehicle is stopped");
 
-        currentSpeed = 0;
-        return;
+
+
     }
 
 }

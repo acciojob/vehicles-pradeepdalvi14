@@ -17,7 +17,7 @@ public class Car extends Vehicle {
         this.isManual = isManual;
         this.type = type;
         this.seats = seats;
-        currentGear = 1;
+        this.currentGear = 1;
         //Hint: Car extends Vehicle
     }
 
@@ -36,33 +36,33 @@ public class Car extends Vehicle {
     }
 
 
-    public void setCurrentGear(int currentGear) {
-        this.currentGear = currentGear;
-    }
+   // public void setCurrentGear(int currentGear) {
+//        this.currentGear = currentGear;
+//    }
 
     public int getDoors() {
         return doors;
     }
 
-    public void setDoors(int doors) {
-        this.doors = doors;
-    }
+  //  public void setDoors(int doors) {
+//        this.doors = doors;
+//    }
 
     public int getSeats() {
         return seats;
     }
 
-    public void setSeats(int seats) {
-        this.seats = seats;
-    }
+   // public void setSeats(int seats) {
+//        this.seats = seats;
+//    }
 
     public int getWheels() {
         return wheels;
     }
 
-    public void setWheels(int wheels) {
-        this.wheels = wheels;
-    }
+   // public void setWheels(int wheels) {
+//        this.wheels = wheels;
+//    }
 
     public int getGears() {
         return gears;
@@ -76,23 +76,23 @@ public class Car extends Vehicle {
         return isManual;
     }
 
-    public void setManual(boolean manual) {
-        isManual = manual;
-    }
+   // public void setManual(boolean manual) {
+//        isManual = manual;
+//    }
     public String getType(){
         return type;
     }
-    public void setType(String type){
-        this.type = type;
-    }
+   // public void setType(String type){
+//        this.type = type;
+//    }
 
     public void changeGear(int newGear){
-
+        currentGear = newGear;
         System.out.println("changeGear method called - The gear is changed to: " + currentGear);
     }
 
     public void changeSpeed(int newSpeed, int newDirection){
-       // move(newSpeed, newDirection);
+        move(newSpeed, newDirection);
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
 }
